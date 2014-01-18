@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  h1 Territories:
+    br
+    h4
+    ul
+      each territory, i in list
+        li
+          div=territory
+          br
+          a(href="#{territory}") File

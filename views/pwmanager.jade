@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  form(name='pwinput', action='/pwpost', method='post')
+    textarea(style="display:none;" type="hidden" name="username") Admin
+    //- Public
+    | Password:
+    input(type='password', name='password')
+    input(type='submit', value='Submit')

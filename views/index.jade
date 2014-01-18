@@ -1,0 +1,8 @@
+extends layout
+
+block content
+
+  form(name='input', action='/login', method='post')
+    textarea(style="display:none;" type="hidden" name="username") Public
+    | Password:
+    input(type='password', name='password')
